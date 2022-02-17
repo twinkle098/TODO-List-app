@@ -16,7 +16,7 @@ jobs:
       with:
         java-version: 14
         distribution: 'adopt'
-    - run: mvn -B package --file pom.xml -DskipTests
+    - run: mvn -B package --file pom.xml 
     - run: ls 
     - run: ls target
     - run: mkdir staging && cp target/*.jar staging
