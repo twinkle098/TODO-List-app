@@ -1,25 +1,27 @@
-name: JAVA-Maven CI
+name: JAVA-Maven CI #workflow name
 
 on:
  push:
-    branches: [ master ]
+    branches: [ master ] #event which is triggered workflow
   
 
 jobs:
   build-job: 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest #runner which will run the action
 
     steps:
-    - uses: actions/checkout@v1
+    #checkout the code from repository using actions
+    - uses: actions/checkout@v1 
     - name: Set up JDK 14
-      uses: actions/setup-java@v2
+      uses: actions/setup-java@v2 
       with:
         java-version: 14
         distribution: 'adopt'
-    - run: mvn -B package --file pom.xml 
+    - run: mvn -B package --file pom.xml  #building the maven package
     - run: ls 
     - run: ls target
-    - run: mkdir staging && cp target/*.jar staging
+ # staging folder is created and all file ending with the .jar extension in the target folder is copied into staging folder   
+    - run: mkdir staging && cp target/*.jar staging  
     - uses: actions/upload-artifact@v1
       with:
         name: Package
