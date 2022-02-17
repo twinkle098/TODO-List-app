@@ -29,7 +29,7 @@ jobs:
           with:
             java-version: 14
         - run: mvn -B package --file pom.xml -DskipTests
-        - run: mkdir staging && cp target/TO-DO-List-app-0.0.1-SNAPSHOT.jar.original staging
+        - run: mkdir staging && cp target/*.jar staging
         - uses: actions/upload-artifact@v1
           with:
             name: Package
