@@ -5,10 +5,11 @@ on:
     branches: [ master ] 
   
 #runner which will run the action
+# this workflow contains a single job called " build-job"
 jobs:
   build-job: 
     runs-on: ubuntu-latest 
-
+# steps representa sequence of task that will be executed as part of  the job
     steps:
     #checkout the code from repository using actions
     - uses: actions/checkout@v1 
