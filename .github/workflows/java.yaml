@@ -18,6 +18,8 @@ jobs:
       with:
         java-version: 14
         distribution: 'adopt'
+        overwrite-settings: false
+        settings-path: ${{ github.workspace }}
  #building the maven package
     - run: mvn -B package --file pom.xml  
     - run: ls 
