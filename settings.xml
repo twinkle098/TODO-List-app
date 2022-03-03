@@ -17,7 +17,7 @@
         </repository>
         <repository>
           <id>github</id>
-          <url>https://maven.pkg.github.com/user/repo-name</url>
+          <url>https://maven.pkg.github.com/twinkle098/TODO-List-app</url>
           <snapshots>
             <enabled>true</enabled>
           </snapshots>
