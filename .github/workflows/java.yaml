@@ -1,7 +1,7 @@
 name: JAVA-Maven CI #workflow name
 #event which is triggered workflow
 on:
- push:
+  push:
     branches: [ master ] 
   
 #runner which will run the action
