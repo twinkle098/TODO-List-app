@@ -9,7 +9,7 @@ on:
 jobs:
   build-job: 
     runs-on: ubuntu-latest 
-# steps representa sequence of task that will be executed as part of  the job
+# steps representa sequence of task that will be executed as part of  the job.
     steps:
     #checkout the code from repository using actions
     - uses: actions/checkout@v1 
