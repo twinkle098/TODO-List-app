@@ -33,7 +33,7 @@ jobs:
     - run: ls staging
     - run: mvn -B deploy 
       env:
-         ARTIFACT1_TOKEN: ${{ secrets.ARTIFACT1_TOKEN }}
+         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     
   
     
