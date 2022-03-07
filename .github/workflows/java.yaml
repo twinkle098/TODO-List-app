@@ -19,7 +19,7 @@ jobs:
         java-version: 14
         distribution: 'adopt'
         overwrite-settings: false
-        settings-path: ${{ github.workspace }}
+        #settings-path: ${{ github.workspace }}
  #building the maven package
     - run: mvn -B package --file pom.xml  
     - run: ls 
@@ -31,7 +31,11 @@ jobs:
         name: Package
         path: staging
     - run: ls staging
-    - run: mvn -s settings.xml clean deploy
+    - run: mvn -B --no-transfer-progress deploy -DskipTests --projects TODO-List-app
+      env:
+         ARTIFACT1_TOKEN: ${{ secrets.ARTIFACT1_TOKEN }}
+    
+  
     
         
     
