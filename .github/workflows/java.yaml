@@ -31,7 +31,7 @@ jobs:
         name: Package
         path: staging
     - run: ls staging
-    - run: mvn -B --no-transfer-progress deploy -DskipTests --projects TODO-List-app
+    - run: mvn -B deploy 
       env:
          ARTIFACT1_TOKEN: ${{ secrets.ARTIFACT1_TOKEN }}
     
