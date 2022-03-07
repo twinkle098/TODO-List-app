@@ -31,7 +31,7 @@ jobs:
         name: Package
         path: staging
     - run: ls staging
-    - run: mvn -s settings.xml deploy
+    - run: mvn -s settings.xml clean deploy
     
         
     
