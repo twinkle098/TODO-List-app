@@ -5,7 +5,7 @@ on:
     branches: [ master ] 
   
 #runner which will run the action
-# this workflow contains a single job called " build-job"
+# this workflow contains a single job called " build-job".
 jobs:
   build-job: 
     runs-on: ubuntu-latest 
