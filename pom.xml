@@ -63,11 +63,11 @@
 	</build>
 	
 	<distributionManagement>
-           <repository>
+           <snapshotRepository>
              <id>github</id>
              <name>GitHub twinkle098 Apache Maven Packages</name>
              <url>https://maven.pkg.github.com/twinkle098/TODO-List-app</url>
-  	   </repository>
+  	   </snapshotRepository>
 	</distributionManagement>
 	
 
