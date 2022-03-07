@@ -8,7 +8,7 @@
 	<version>0.0.2-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>TO-DO-List-app</name>
+	<name>TODO-List-app</name>
 	<description>TODO-List-app project for Spring Boot</description>
 
 	<parent>
